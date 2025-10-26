@@ -62,7 +62,7 @@ Visa Approval Prediction using Machine Learning/
 
 1\. Create and activate a Python virtual environment:
 
-&nbsp;  ```bash
+&nbsp;  
 
 &nbsp;  python -m venv venv
 
