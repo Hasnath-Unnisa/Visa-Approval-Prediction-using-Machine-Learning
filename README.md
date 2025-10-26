@@ -42,11 +42,13 @@ Visa Approval Prediction using Machine Learning/
 
 ├── data/
 
-│ └── easyvisa.csv ├── results/
+│ └── easyvisa.csv 
+
+├── results/
 
 ├── documentation/
 
-│ └── Project\_Report.pdf # optional
+│ └── Project\_Report.pdf 
 
 ├── requirements.txt
 
