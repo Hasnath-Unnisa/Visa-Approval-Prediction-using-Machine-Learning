@@ -1,0 +1,8 @@
+
+Best Model: Gradient Boosting Classifier
+Accuracy: 0.7633
+
+Description:
+The Gradient Boosting model achieved strong precision (0.78) and recall (0.90),
+making it an accurate and business-aligned decision support tool for EasyVisa.
+It enables smarter, faster, and fairer visa approval predictions.
