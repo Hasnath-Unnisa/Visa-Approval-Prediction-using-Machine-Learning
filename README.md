@@ -1,152 +1,159 @@
-**# Visa Approval Prediction using Machine Learning**
+**#** Visa Approval Prediction using Machine Learning
 
 
 
-**## Abstract**
+**### 📊 Predicting visa application outcomes using multiple ML algorithms** 
 
 
 
-This project builds multiple machine learning classification models to predict visa approval outcomes using the EasyVisa dataset. The analysis covers data preprocessing, feature engineering, model training, and evaluation. Models such as Decision Tree, Random Forest, Gradient Boosting, AdaBoost, and Bagging are compared to identify the best-performing classifier for predicting visa approvals.
+**## 🧾** Abstract  
 
 
 
-**## Objectives**
+**This project applies \*\*supervised machine learning techniques\*\* to predict visa approval outcomes using the \*\*EasyVisa dataset\*\*.**  
+
+**The process involves \*\*data preprocessing\*\*, \*\*feature engineering\*\*, \*\*model development\*\*, and \*\*comparative evaluation\*\* of various classification algorithms — including \*\*Decision Tree\*\*, \*\*Random Forest\*\*, \*\*Gradient Boosting\*\*, \*\*AdaBoost\*\*, and \*\*Bagging\*\*.**  
 
 
 
-\- Understand and explore the EasyVisa dataset.
-
-\- Perform data cleaning, encoding, and feature selection.
-
-\- Apply multiple ML algorithms for classification.
-
-\- Evaluate performance using metrics like Accuracy, Precision, Recall, and F1-score.
-
-\- Identify the most accurate and reliable model.
-
-\- Present a well-structured and reproducible ML project.
+**The final results identify \*\*Gradient Boosting\*\* as the most accurate and business-aligned model, offering actionable insights for scaling smarter, fairer visa processing decisions.**  
 
 
 
-**## Project Structure**
+**---**
 
 
 
-Visa Approval Prediction using Machine Learning/
+**## 🎯** Objectives  
+
+
+
+**- 🔍 Understand and explore the EasyVisa dataset**  
+
+**- 🧹 Perform data cleaning, encoding, and feature selection**  
+
+**- 🤖 Train and evaluate multiple ML classification models**  
+
+**- 📈 Compare results using Accuracy, Precision, Recall, and F1-Score**  
+
+**- 🏆 Identify the most reliable and interpretable model**  
+
+**- 💡 Deliver a transparent, reproducible ML workflow**  
+
+
+
+**---**
+
+
+
+**## 🗂️** Project Structure  
+
+
+
+Visa\_Approval\_Prediction\_using\_Machine\_Learning/
 
 ├── README.md
 
-├── source\_code/
+├── Source\_Code/
 
 │ └── Visa\_approval.ipynb
 
-├── data/
+├── Data/
 
 │ └── easyvisa.csv 
 
 ├── results/
+=======
+│ └── easyvisa.csv
 
-├── documentation/
+├── Results/
 
 │ └── Project\_Report.pdf 
+=======
+│ ├── confusion\_matrix.png
+
+│ ├── classification\_report.txt
+
+│ ├── model\_performance.txt
+
+│ └── gradient\_boosting\_model.pkl
+
+├── Documentation/
+
+│ └── Project\_Report.pdf
+>>>>>>> 70805c8 (Updated README.md with improved formatting and setup instructions)
 
 ├── requirements.txt
 
 └── .gitignore
 
+\## ⚙️ **Setup Instructions** 
 
+1️⃣ \*\*Create and activate a virtual environment:\*\*  
 
+```bash
 
+python -m venv venv
 
-**## Setup Instructions**
+venv\\Scripts\\activate
 
-
-
-1\. Create and activate a Python virtual environment:
-
-&nbsp;  
-
-&nbsp;  python -m venv venv
-
-&nbsp;  venv\\Scripts\\activate
-
-
-
-2\. Install dependencies:
-
-
-
-pip install -r requirements.txt
-
-
-
-3\. Launch Jupyter Lab or Notebook:
-
-
+2️⃣ Install dependencies:
 
 jupyter lab
 
+3️⃣ Launch Jupyter Notebook:
+
+Source\_Code/Visa\_approval.ipynb
+
+4️⃣ Run all cells in:
+
+Source\_Code/Visa\_approval.ipynb
+
+🧩 Dataset
+
+The project uses the EasyVisa dataset, containing attributes such as education, experience, employment region, and wage details.
+If the full dataset includes sensitive information, do not upload it publicly — instead:
+
+Include a small anonymized file named sample_easyvisa.csv inside the Data/ folder, or
+
+Add a short README.md in Data/ explaining how to obtain it.
 
 
-4\. Open and run all cells in:
+📊 **Results**
 
+The notebook provides:
 
+🔹 Model comparison across multiple classifiers
 
-source\_code/Visa\_approval.ipynb
+🔹 Confusion matrix and classification report visualizations
 
+🔹 Identification of the best performing model (Gradient Boosting)
 
-
-**Data**
-
-
-
-The project uses the EasyVisa dataset for classification tasks.
-
-If the dataset contains personal or confidential information, do not upload the full file.
-
-Instead:
-
-
-
-Add a small anonymized sample named sample\_easyvisa.csv inside the data/ folder, or
-
-
-
-Add a README.md inside data/ explaining how to access the dataset.
-
-
-
-**Results**
-
-
-
-The notebook includes:
+🔹 Insights for optimizing decision workflows
 
 
 
-* Model performance comparisons (Decision Tree, Random Forest, Gradient Boosting, AdaBoost, Bagging)
-* Confusion matrix and classification report
-* Selection of the best model based on evaluation metrics
+**Final Model Summary:**
+
+
+✅ Algorithm: Gradient Boosting
+
+📈 Accuracy: 76.3%
+
+🧠 Key Strength: Balances interpretability and predictive performance
+
+
+🧪 **Reproducibility**
+
+Every step — from preprocessing to model evaluation — is contained in the Jupyter Notebook.
+
+Follow the setup guide and execute cells sequentially to reproduce identical results.
 
 
 
-**How to Reproduce**
+👩‍💻 Author : Hasnath Unnisa
 
-
-
-All code, data references, and dependencies are provided.
-
-Follow the setup steps, then execute the notebook in order to reproduce the results.
-
-
-
-Contact
-
-
-
-Author: Hasnath Unnisa
-
-Email: unnisahasnath@gmail.com
+📧 Email : unnisahasnath@gmail.com
 
 
 
