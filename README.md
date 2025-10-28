@@ -125,6 +125,7 @@ Visa approvals are **more likely** for candidates with:
 
 This model can help organizations **prioritize and evaluate visa applications** more effectively, ensuring fairness and efficiency.
 
+---
 
 ## 👩‍💻 Author  
 
