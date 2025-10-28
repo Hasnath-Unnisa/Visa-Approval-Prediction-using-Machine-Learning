@@ -64,52 +64,68 @@ Visa_Approval_Prediction/
 
 ---
 
+
 ## ⚙️ Setup and Execution  
 
-### 1️⃣ Create a virtual environment  
-```bash
+### Step 1: Create a Virtual Environment  
+
+```
 python -m venv venv
 venv\Scripts\activate
 
-2️⃣ Install dependencies
+```
 
-pip install -r requirements.txt
+### Step 2: Install Dependencies  
 
-3️⃣ Launch Jupyter Notebook
+```
+ pip install -r requirements.txt
 
+```
+
+### Step 3: Launch Jupyter Notebook  
+
+```
 jupyter notebook
 
-4️⃣ Open and execute the notebook
+```
 
-Navigate to Source_Code/Visa_approval.ipynb and run all cells sequentially.
+### Step 4: Run the Notebook  
+```
+Open `Source_Code/Visa_approval.ipynb` and execute all cells in order.
 
-📊 Results and Insights
+```
 
-Gradient Boosting achieved the best accuracy (76.3%) and stable recall scores.
+## 📊 Results and Insights  
 
-Major factors influencing visa approval:
+- **Best Performing Model:** Gradient Boosting  
+- **Accuracy:** 76.3%  
+- **Precision:** 0.76  
+- **Recall:** 0.78  
+- **F1-Score:** 0.77  
 
-Education level of employee
+### 🔍 Key Observations  
 
-Years of job experience
+- Gradient Boosting achieved the highest performance among all tested models.  
+- The model maintained a **strong recall**, meaning it successfully identified most approved applications.  
+- The **feature importance analysis** showed that the following factors most influenced visa approvals:  
 
-Region of employment
+  - Education level of the employee  
+  - Years of job experience  
+  - Region of employment  
+  - Prevailing wage  
 
-Prevailing wage
+### 💡 Business Insight  
 
-📈 The model enables smarter, fairer, and faster visa application analysis.
+Visa approvals are **more likely** for candidates with: 
+ 
+- Higher education qualifications  
+- More work experience  
+- Employment in high-demand regions  
+- Competitive wage offers  
 
-🧪 Reproducibility
+This model can help organizations **prioritize and evaluate visa applications** more effectively, ensuring fairness and efficiency.
 
-To reproduce results:
-
-Clone or download the repository
-
-Follow the setup instructions
-
-Run the Jupyter Notebook end-to-end
-
-🚀 Future Enhancements
+###🚀 Future Enhancements
 
 Integrate advanced algorithms like XGBoost and LightGBM
 
