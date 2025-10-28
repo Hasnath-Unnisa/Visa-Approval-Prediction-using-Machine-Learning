@@ -125,17 +125,13 @@ Visa approvals are **more likely** for candidates with:
 
 This model can help organizations **prioritize and evaluate visa applications** more effectively, ensuring fairness and efficiency.
 
-###🚀 Future Enhancements
 
-Integrate advanced algorithms like XGBoost and LightGBM
+## 👩‍💻 Author  
 
-Develop a Streamlit/Flask web interface for interactive predictions
+**Name:** Hasnath Unnisa  
+**Email:** unnisahasnath@gmail.com  
+**LinkedIn:** www.linkedin.com/in/hasnath22  
 
-Add explainability features (SHAP, LIME) for decision transparency
-
-Author :Hasnath Unnisa
-Email : unnisahasnath@gmail.com
-Linkedin: www.linkedin.com/in/hasnath22
 
 
 
