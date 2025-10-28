@@ -1,15 +1,13 @@
-# 🧠 Visa Approval Prediction using Machine Learning
+# 🧠 Visa Approval Prediction using Machine Learning  
 
 ### 📊 Predicting visa application outcomes using multiple ML algorithms  
 
 ---
 
-## 🧾 Abstract  
+## 🧾 Overview  
 
 This project applies **supervised machine learning techniques** to predict visa approval outcomes using the **Easy Visa dataset**.  
 The process involves **data preprocessing**, **feature engineering**, **model development**, and **comparative evaluation** of various classification algorithms — including **Decision Tree**, **Random Forest**, **Gradient Boosting**, **AdaBoost**, and **Bagging**.  
-
-The final results identify **Gradient Boosting** as the most accurate and business-aligned model, offering actionable insights for scaling smarter, fairer visa processing decisions.  
 
 ---
 
@@ -20,83 +18,109 @@ The final results identify **Gradient Boosting** as the most accurate and busine
 - 🤖 Train and evaluate multiple ML classification models  
 - 📈 Compare results using Accuracy, Precision, Recall, and F1-Score  
 - 🏆 Identify the most reliable and interpretable model  
-- 💡 Deliver a transparent, reproducible ML workflow  
+- 💡 Deliver a transparent, reproducible ML workflow 
 
 ---
 
-## 🗂️ Project Structure  
+## 🧩 Dataset  
 
-Visa_Approval_Prediction_using_Machine_Learning/
-├── README.md
-├── Source_Code/
-│ └── Visa_approval.ipynb
+- **Source:** EasyVisa (synthetic dataset for educational use)  
+- **Features:** Education, Job Experience, Wages, Employment Region, Job Training Requirements, etc.  
+- **Target:** `case_status` — Visa Approved (1) or Denied (0)  
+
+---
+
+## ⚙️ Project Workflow  
+
+Visa_Approval_Prediction/
 ├── Data/
 │ └── easyvisa.csv
+├── Source_Code/
+│ └── Visa_approval.ipynb
 ├── Results/
 │ ├── confusion_matrix.png
 │ ├── classification_report.txt
-│ ├── model_performance.txt
-│ └── gradient_boosting_model.pkl
+│ └── model_summary.txt
 ├── Documentation/
 │ └── Project_Report.pdf
 ├── requirements.txt
-└── .gitignore
+├── .gitignore
+└── README.md
 
 
 ---
 
-## ⚙️ Setup Instructions  
+## 🤖 Machine Learning Models  
 
-1️⃣ **Create and activate a virtual environment:**  
+| Model | Accuracy | Precision | Recall | F1-score |
+|-------|-----------|------------|----------|-----------|
+| Decision Tree | 70.1% | 0.68 | 0.71 | 0.69 |
+| Random Forest | 74.5% | 0.73 | 0.76 | 0.74 |
+| AdaBoost | 73.2% | 0.71 | 0.74 | 0.73 |
+| Bagging | 75.0% | 0.74 | 0.75 | 0.74 |
+| **Gradient Boosting** | **76.3%** | **0.76** | **0.78** | **0.77** |
+
+✅ **Best Model:** Gradient Boosting  
+💡 Provides an excellent balance between interpretability and predictive performance.  
+
+---
+
+## ⚙️ Setup and Execution  
+
+### 1️⃣ Create a virtual environment  
 ```bash
 python -m venv venv
 venv\Scripts\activate
 
-2️⃣ Install dependencies:
+2️⃣ Install dependencies
 
 pip install -r requirements.txt
 
-3️⃣ Launch Jupyter Notebook:
+3️⃣ Launch Jupyter Notebook
 
-jupyter lab
+jupyter notebook
 
-4️⃣ Run all cells in:
+4️⃣ Open and execute the notebook
 
-Source_Code/Visa_approval.ipynb
+Navigate to Source_Code/Visa_approval.ipynb and run all cells sequentially.
 
-🧩 Dataset
+📊 Results and Insights
 
-The project uses the Easy Visa dataset, containing attributes such as education, experience, employment region, and wage details.
-If the full dataset includes sensitive information, do not upload it publicly — instead:
+Gradient Boosting achieved the best accuracy (76.3%) and stable recall scores.
 
-Include a small anonymized file named sample_easyvisa.csv inside the Data/ folder, or
+Major factors influencing visa approval:
 
-Add a short README.md in Data/ explaining how to obtain it.
+Education level of employee
 
-📊 Results
+Years of job experience
 
-The notebook provides:
+Region of employment
 
-🔹 Model comparison across multiple classifiers
+Prevailing wage
 
-🔹 Confusion matrix and classification report visualizations
-
-🔹 Identification of the best performing model (Gradient Boosting)
-
-🔹 Insights for optimizing decision workflows
-
-Final Model Summary:
-
-✅ Algorithm: Gradient Boosting
-
-📈 Accuracy: 76.3%
-
-🧠 Key Strength: Balances interpretability and predictive performance
+📈 The model enables smarter, fairer, and faster visa application analysis.
 
 🧪 Reproducibility
 
-Every step — from preprocessing to model evaluation — is contained in the Jupyter Notebook.
-Follow the setup guide and execute cells sequentially to reproduce identical results.
+To reproduce results:
 
-👩‍💻 Author : Hasnath Unnisa
-📧 Email : unnisahasnath@gmail.com
+Clone or download the repository
+
+Follow the setup instructions
+
+Run the Jupyter Notebook end-to-end
+
+🚀 Future Enhancements
+
+Integrate advanced algorithms like XGBoost and LightGBM
+
+Develop a Streamlit/Flask web interface for interactive predictions
+
+Add explainability features (SHAP, LIME) for decision transparency
+
+Author :Hasnath Unnisa
+Email : unnisahasnath@gmail.com
+Linkedin: www.linkedin.com/in/hasnath22
+
+
+
