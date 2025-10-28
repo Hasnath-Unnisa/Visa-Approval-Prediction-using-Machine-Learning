@@ -29,8 +29,8 @@ The process involves **data preprocessing**, **feature engineering**, **model de
 - **Target:** `case_status` — Visa Approved (1) or Denied (0)  
 
 ---
-
 ## ⚙️ Project Workflow  
+```
 
 Visa_Approval_Prediction/
 ├── Data/
@@ -46,8 +46,7 @@ Visa_Approval_Prediction/
 ├── requirements.txt
 ├── .gitignore
 └── README.md
-
-
+```
 ---
 
 ## 🤖 Machine Learning Models  
