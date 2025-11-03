@@ -51,16 +51,19 @@ Visa_Approval_Prediction/
 
 ## 🤖 Machine Learning Models  
 
-| Model | Accuracy | Precision | Recall | F1-score |
+This project compared multiple ensemble learning algorithms — both **Boosting** and **Bagging** — to identify the most effective method for predicting visa approval outcomes.  
+
+Boosting techniques (AdaBoost and Gradient Boosting) showed stronger generalization and recall compared to Bagging-based models.
+
+| Model | Accuracy | Precision | Recall | F1-Score |
 |-------|-----------|------------|----------|-----------|
-| Decision Tree | 70.1% | 0.68 | 0.71 | 0.69 |
-| Random Forest | 74.5% | 0.73 | 0.76 | 0.74 |
-| AdaBoost | 73.2% | 0.71 | 0.74 | 0.73 |
-| Bagging | 75.0% | 0.74 | 0.75 | 0.74 |
-| **Gradient Boosting** | **76.3%** | **0.76** | **0.78** | **0.77** |
+| **AdaBoost** | **0.7206** | **0.7495** | **0.8737** | **0.8068** |
+| **Gradient Boosting** | **0.7369** | **0.7669** | **0.8707** | **0.8155** |
+| **Bagging Classifier** | **0.7121** | **0.7633** | **0.8249** | **0.7929** |
+| **Random Forest** | **0.7190** | **0.7676** | **0.8308** | **0.7980** |
 
 ✅ **Best Model:** Gradient Boosting  
-💡 Provides an excellent balance between interpretability and predictive performance.  
+💡 Demonstrated the highest F1-Score (0.8155) and recall, indicating superior overall balance and predictive performance.
 
 ---
 
@@ -97,36 +100,37 @@ Open `Source_Code/Visa_approval.ipynb` and execute all cells in order.
 
 ## 📊 Results and Insights  
 
+The project evaluated multiple ensemble machine learning models under two major categories **Boosting** and **Bagging** to predict visa approval outcomes using applicant and job-related data.
+
 | Model | Accuracy | Precision | Recall | F1-Score |
 |-------|-----------|------------|----------|-----------|
-| **Gradient Boosting (Tuned)** | **0.7376** | **0.7664** | **0.8734** | **0.8164** |
-| **AdaBoost (Tuned)** | **0.7217** | **0.7490** | **0.8775** | **0.8082** |
+| **AdaBoost** | **0.7206** | **0.7495** | **0.8737** | **0.8068** |
+| **Gradient Boosting** | **0.7369** | **0.7669** | **0.8707** | **0.8155** |
+| **Bagging Classifier** | **0.7121** | **0.7633** | **0.8249** | **0.7929** |
 | **Random Forest** | **0.7190** | **0.7676** | **0.8308** | **0.7980** |
 
-✅ **Final Selected Model:** Gradient Boosting (Tuned)  
-💡 Achieved the highest F1-Score (0.8164) and strong recall performance, indicating the best overall balance between accuracy and generalization.
+✅ **Best Model:** Gradient Boosting  
+💡 Achieved the highest **F1-Score (0.8155)** and strong **recall (0.8707)**, indicating excellent balance between correctly identifying approved visa cases and maintaining high precision.
 
-### 🔍 Key Observations  
+---
 
-- Gradient Boosting achieved the highest performance among all tested models.  
-- The model maintained a **strong recall**, meaning it successfully identified most approved applications.  
-- The **feature importance analysis** showed that the following factors most influenced visa approvals:  
+### 🔍 Key Insights  
 
-  - Education level of the employee  
-  - Years of job experience  
-  - Region of employment  
-  - Prevailing wage  
+- **Boosting models** (AdaBoost, Gradient Boosting) outperformed **Bagging methods** (Bagging Classifier, Random Forest) across most metrics.  
+- **Gradient Boosting** demonstrated superior performance due to its sequential learning approach, which reduces bias and improves generalization.  
+- **High recall values** show that the model effectively minimizes false negatives — an important factor when identifying eligible visa approvals.  
+- **Random Forest** and **Bagging Classifier** also achieved competitive performance, confirming that ensemble techniques outperform simple decision trees.  
 
-### 💡 Business Insight  
+---
 
-Visa approvals are **more likely** for candidates with: 
- 
-- Higher education qualifications  
-- More work experience  
-- Employment in high-demand regions  
-- Competitive wage offers  
+### 💡 Business Interpretation  
 
-This model can help organizations **prioritize and evaluate visa applications** more effectively, ensuring fairness and efficiency.
+The results suggest that visa approvals are **most strongly influenced by factors** such as:  
+- Education level and work experience of the applicant  
+- Employment region and company size  
+- Prevailing wage and full-time job status  
+
+The **Gradient Boosting model** serves as an ideal decision-support tool for organizations like EasyVisa to predict visa outcomes more **accurately, fairly, and efficiently.**
 
 ---
 
