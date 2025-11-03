@@ -97,11 +97,14 @@ Open `Source_Code/Visa_approval.ipynb` and execute all cells in order.
 
 ## 📊 Results and Insights  
 
-- **Best Performing Model:** Gradient Boosting  
-- **Accuracy:** 76.3%  
-- **Precision:** 0.76  
-- **Recall:** 0.78  
-- **F1-Score:** 0.77  
+| Model | Accuracy | Precision | Recall | F1-Score |
+|-------|-----------|------------|----------|-----------|
+| **Gradient Boosting (Tuned)** | **0.7376** | **0.7664** | **0.8734** | **0.8164** |
+| **AdaBoost (Tuned)** | **0.7217** | **0.7490** | **0.8775** | **0.8082** |
+| **Random Forest** | **0.7190** | **0.7676** | **0.8308** | **0.7980** |
+
+✅ **Final Selected Model:** Gradient Boosting (Tuned)  
+💡 Achieved the highest F1-Score (0.8164) and strong recall performance, indicating the best overall balance between accuracy and generalization.
 
 ### 🔍 Key Observations  
 
